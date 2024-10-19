@@ -9,19 +9,19 @@ class Routs {
   static routs() => [
         GetPage(
           name: RoutsName.splashview,
-          page: () => SplashView(),
+          page: () => const SplashView(),
         ),
         GetPage(
           name: RoutsName.loginview,
-          page: () => LoginView(),
+          page: () => const LoginView(),
         ),
         GetPage(
           name: RoutsName.signupview,
-          page: () => Signupview(),
+          page: () => const Signupview(),
         ),
         GetPage(
           name: RoutsName.homeview,
-          page: () => HomeView(),
+          page: () => const HomeView(),
         )
       ];
 }

@@ -12,14 +12,14 @@ class SplashService {
 
     if (user != null) {
       Timer(
-        Duration(seconds: 6),
+        const Duration(seconds: 6),
         () {
           Get.toNamed(RoutsName.homeview);
         },
       );
     } else {
       Timer(
-        Duration(seconds: 6),
+        const Duration(seconds: 6),
         () {
           Get.toNamed(RoutsName.loginview);
         },

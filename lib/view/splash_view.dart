@@ -46,7 +46,7 @@ class _SplashViewState extends State<SplashView>
       body: Center(
         child: FadeTransition(
           opacity: animation, // Use the animation for opacity
-          child: Text(
+          child: const Text(
             'Splash Screen',
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),

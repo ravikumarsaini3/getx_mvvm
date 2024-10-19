@@ -6,9 +6,17 @@ import 'package:http/http.dart' as http;
 
 class NetworkService extends BaseServices {
   @override
-  Future getapi(String url) {
-    // TODO: implement getapi
-    throw UnimplementedError();
+  Future getapi(String url) async {
+    dynamic Responce;
+    try {
+      final responce = await http.get(
+        Uri.parse(url),
+      );
+      Responce = returnresponce(responce);
+    } catch (e) {
+      rethrow;
+    }
+    return Responce;
   }
 
   @override
